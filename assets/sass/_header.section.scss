@@ -1,0 +1,180 @@
+.header-section {
+	position: relative;
+
+	.ornaments-wrapper {
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 60%;
+			transform: translate(-50%, 0);
+			@include ipad {
+				width: 50%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 60%;
+			transform: translate(50%, -30%) scaleX(-1);
+			@include ipad {
+				width: 50%;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-55%, -20%);
+			@include ipad {
+				width: 30%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-15%, 65%);
+			@include ipad {
+				width: 25%;
+			}
+			.orn-5 {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				transform: translate(70%, 0);
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(55%, -10%) rotate(-10deg);
+			@include ipad {
+				width: 30%;
+			}
+		}
+		.orn-7 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(20%, 65%);
+			@include ipad {
+				width: 25%;
+			}
+			.orn-8 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				transform: translate(-70%, 0);
+			}
+		}
+
+		.orn-9 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30%;
+			transform: translate(0%, 0%) rotate(-25deg) scale(-1);
+		}
+		.orn-10 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(0%, 0);
+			.orn-11 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 40%;
+				transform: translate(40%, 40%);
+			}
+		}
+		.orn-12 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(0%, 0%) scaleX(-1);
+		}
+		.orn-13 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(35%, 20%) rotate(-40deg) scaleX(-1);
+			.orn-14 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 30%;
+				transform: translate(0%, 40%) rotate(-40deg) scaleX(-1);
+			}
+		}
+	}
+
+	.header-content {
+		position: relative;
+		text-align: center;
+		padding: 5rem 2rem;
+		min-height: 80vh;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		@include max-sm {
+			padding: 5rem 1rem;
+		}
+
+		.header {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			@include ipad {
+				width: 60%;
+			}
+			.image-wrapper {
+				position: relative;
+				width: 80%;
+				margin: 0 auto;
+				aspect-ratio: 3/4;
+				z-index: 3;
+				.image-element.with-border {
+					background-color: var(--color-primary);
+					border: 1px solid var(--color-light);
+					height: 100%;
+					border-radius: 300px;
+					padding: 0.75rem;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 300px;
+					}
+				}
+			}
+
+			.header-title {
+				position: relative;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: var(--border-radius);
+				text-align: center;
+				padding: 11rem 1rem 1rem;
+				margin-top: -10rem;
+
+				&-content {
+					color: var(--color-light);
+				}
+			}
+		}
+	}
+}
